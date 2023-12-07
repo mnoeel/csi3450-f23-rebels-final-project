@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Temporary</title>
+</head>
+<body>
+
+<h1></h1>
+
+<form action="opening.php" method="post">
+    <label for="companyName">Company Name:</label>
+    <input type="text" id="companyName" name="companyName" required><br>
+    <label for="openingTitle">Opening Title:</label>
+    <input type="text" id="openingTitle" name="openingTitle" required><br>
+    <label for="qualifications">Required Qualification:</label><br>
+    <select id="qualifications" name="qualifications">
+        <option value="SEC-45">SEC-45</option>
+        <option value="SEC-60">SEC-60</option>
+        <option value="CLERK">CLERK</option>
+        <option value="PRG-PY">PRG-PY</option>
+        <option value="PRG-C++">PRG-C++</option>
+        <option value="DBA-DB2">DBA-DB2</option>
+        <option value="DBA-SQLSERV">DBA-SQLSERV</option>
+        <option value="SYS-1">SYS-1</option>
+        <option value="SYS-2">SYS-2</option>
+        <option value="NW-CIS">NW-CIS</option>
+        <option value="WD-CF">WD-CF</option>
+    </select><br>
+    <label for="startDate">Starting Date (YYYY-MM-DD):</label>
+    <input type="date" id="startDate" name="startDate" required><br>
+    <label for="endDate">End Date (YYYY-MM-DD):</label>
+    <input type="date" id="endDate" name="endDate" required><br>
+    <label for="hourlyPay">Hourly Pay:</label>
+    <input type="number" id="hourlyPay" name="hourlyPay" min="0" required><br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
